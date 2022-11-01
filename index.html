@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title"><img src="./logo.PNG" alt="">Student Satisfaction Survey Form</h1>
+    
+    <p id="description">Thanks you for taking the time to help us improve the platform</p>
+    <div class="container">
+        <form id="survey-form">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+      
+          <label for="matric" id="matric-label">Matric Number</label>
+          <input type="text" id="matric" name="matric" placeholder="Enter your Matric number" required>
+
+          <label for="level" id="level-label">level</label>
+          <input type="number" id="level" name="level" placeholder="Enter your level" min="100" max="400">
+          
+          <label for="Satisfaction">How satisfied are you with the school's coursework?</label>
+          <select id="dropdown" name="Satisfaction">
+            <option value="satisfied-1">Very satisfied</option>
+            <option value="satisfied-2">Somewhat satisfied</option>
+            <option value="satisfied-3">Neutral</option>
+            <option value="satisfied-4">Dissatisfied</option>
+            <option value="satisfied-5">Highly dissatisfied</option>
+          </select>
+
+          <label for="container">How well do lecturer's respond to students inquiries?</label>
+          <label class="container1">Very well
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark1"></span>
+          </label>
+          <label class="container1">Somewhat well
+            <input type="radio" name="radio">
+            <span class="checkmark1"></span>
+          </label>
+          <label class="container1">Neutral
+            <input type="radio" name="radio">
+            <span class="checkmark1"></span>
+          </label>
+          <label class="container1">Lecturers don't respond well 
+            <input type="radio" name="radio">
+            <span class="checkmark1"></span>
+          </label>
+
+          <label for="lectures">Are you satisfied with the quality and nature of lecturing?</label>
+          <select id="lectures" name="lectures">
+            <option value="yes">Yes, i am</option>
+            <option value="no">No, i am not</option>
+            <option value="maybe">Prefer not to say</option>
+          </select>
+          <div>
+            <label for="country">What will you like to see improved?</label>
+            <label class="container">Teaching method
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Time taken to complete a lesson
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Extracurricular activities
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Others
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label for="country">Do lecturer encourages students to perform better?</label>
+            <label class="container1">Yes, all the times
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark1"></span>
+            </label>
+            <label class="container1">Only sometimes
+              <input type="radio" name="radio">
+              <span class="checkmark1"></span>
+            </label>
+            <label class="container1">No, not at all
+              <input type="radio" name="radio">
+              <span class="checkmark1"></span>
+            </label>
+          
+      
+          <label for="subject">Any comment or suggestions?</label>
+          <textarea id="subject" name="subject" placeholder="Enter your comment here.." style="height:200px"></textarea>
+      
+          <input type="submit" id="submit" value="Submit">
+        </form>
+      </div>
+    
+</body>
+</html>
